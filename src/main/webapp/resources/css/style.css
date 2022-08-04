@@ -1,0 +1,2274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    letter-spacing: 1px;
+}
+li {
+    list-style: none;
+}
+a:hover, a:link, a:active, a {
+    color: black;
+    text-decoration: none;
+}
+/*menu.jsp---------------------------start*/
+body > nav {
+	z-index:999;
+	position : fixed;
+	width:100%;
+}
+body > nav > div > div > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+body > nav > div:nth-of-type(1) > div > div > ul {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+body > nav > div:nth-of-type(1) {
+    background-color: #28b421;
+}
+body > nav > div:nth-of-type(2) {
+	background-color : white;
+}
+body > nav > div > div > div > ul:nth-of-type(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body > nav > div > div > div > ul:nth-of-type(1) {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body > nav > div > div > div > ul:nth-of-type(1) > li > ul {
+    display: none;
+    position: absolute;
+    top:110%;
+    left:-20px;
+}
+body > nav > div > div > div > ul:nth-of-type(1) > li {
+    margin: 0 80px;
+    margin-right: 0;
+    position: relative;
+}
+body > nav > div:nth-of-type(1) > div > div > ul:nth-of-type(1) > a {
+    margin: 0 30px;
+    margin-right: 0;
+    position: relative;
+    color: white;
+    font-weight: 500;
+}
+body > nav > div > div > div > ul:nth-of-type(1) > li:nth-of-type(1):hover > ul {
+    display: block;
+    background-color: white;
+    opacity: 0.9;
+    width: 180px;
+    padding: 0 20px;
+}
+body > nav > div:nth-of-type(2) > div > div > label {
+    margin-bottom: 0;
+}
+body > nav > div:nth-of-type(2) > div > div > ul:nth-of-type(1) {
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+body > nav > div:nth-of-type(2) > div > div > ul:nth-of-type(1) > a > li {
+    border-bottom: 2px solid transparent;
+}
+body > nav > div:nth-of-type(2) > div > div > ul:nth-of-type(1) > li {
+    border-bottom: 2px solid transparent;
+}
+body > nav > div:nth-of-type(2) > div > div > ul:nth-of-type(1) > a > li:hover {
+    border-bottom: 2px solid #28b421;
+}
+body > nav > div:nth-of-type(2) > div > div > ul:nth-of-type(1) > li:hover {
+    border-bottom: 2px solid #28b421;
+}
+body > nav > div:nth-of-type(2) > div > div > ul:nth-of-type(1) > li > ul:nth-of-type(1) > a > li:hover {
+    color: #28b421;
+}
+body > nav > div > div > div > ul:nth-of-type(1) > li> ul > a > li {
+    margin: 10px 0;
+}
+body > nav > div > div > div > ul:nth-of-type(1) > li:nth-of-type(2):hover > ul {
+    display: block;
+    background-color: white;
+    opacity: 0.9;
+    width: 160px;
+    padding: 0 20px;
+}
+body > nav > div > div > div > ul:nth-of-type(1) > li > ul > li> ul > li{
+    margin: 5px 0;
+}
+body > nav > div > div > div > input {
+    display: none;
+}
+body > nav > div > div > div {
+    position: relative;
+}
+body > nav > div > div > div > label {
+    font-size: 23px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px;
+}
+body > nav > div > div > div > label:hover {
+    color: #28b421;
+}
+body > nav > div > div > div > ul:nth-of-type(2) {
+    display: none;
+}
+body > nav > div:nth-of-type(2) > div > div > input:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top : 50px;
+    border-radius: 0 0 5px 5px;
+    height : 180px;
+    animation: menuani 0.3s;
+}
+body > nav > div:nth-of-type(2) > div > div > ul:nth-of-type(2) {
+    background: white;
+    padding : 10px;
+    padding-right : 40px;
+    opacity: 0.9;
+}
+body > nav > div:nth-of-type(2) > div > div > ul:nth-of-type(2) > li {
+	display: flex;
+	align-items: center;
+}
+body > nav > div:nth-of-type(2) > div > div > ul:nth-of-type(2) > li > ul{
+	display: flex;
+	align-items: center;
+}
+@keyframes menuani {
+    from{height: 0;}
+    to{height: 180px;}
+}
+body > nav > div:nth-of-type(2) > div > div > ul:nth-of-type(2) > li, body > nav > div:nth-of-type(2) > div > div > ul:nth-of-type(2) > a {
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px;
+    color: #28b421;
+    margin-top : 15px;
+}
+body > nav > div:nth-of-type(2) > div > div > ul:nth-of-type(2) > a {
+ 	display: flex;
+ 	align-items: center; 
+}
+body > nav > div:nth-of-type(2) > div > div > ul:nth-of-type(2) > li > ul > a > li {
+    color: black;
+    font-size: 16px;
+    margin: 10px 0;
+    margin-right : 40px;
+    font-weight: 400;
+}
+body > nav > div:nth-of-type(2) > div > div > ul:nth-of-type(2) > li > ul > a > li:hover{
+    color: #28b421;
+}
+/*menu.jsp-------------------------------------end*/
+
+
+/*index.jsp - main------------------------------------start*/
+body > .main {
+	z-index : 0;
+	padding-top : 120px;
+	padding-bottom : 100px;
+	min-height : 80vh;
+}
+body > .main > div > div {
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0;
+    margin-bottom: 70px;
+    letter-spacing: 0px;
+}
+body > .main > div > div > input {
+    display: none;
+}
+body > .main > div > div > div {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    height: 100%;
+}
+body > .main > div > div > div:nth-of-type(1){
+    background : url(../images/main01.jpg) 100% 100% no-repeat; 
+}
+body > .main > div > div > div:nth-of-type(2){
+    background : url(../images/main02.jpg) 100% 100% no-repeat;
+}
+body > .main > div > div > div:nth-of-type(3){
+    background : url(../images/main03.jpg) 100% 100% no-repeat;
+}
+body > .main > div > div > div > div:nth-of-type(1) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 300px;
+    height: 100%;
+    color: white;
+}
+body > .main > div > div > div > div > h3 {
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+body > .main > div > div > div > div > p{
+    font-size: 23px;
+    margin-bottom: 30px;
+}
+body > .main > div > div > div > div > a{
+    font-size: 18px;
+    width : 150px;
+    height: 40px;
+    background-color: #28b421;
+    border: none;
+    color: white;
+    font-weight: 500;
+    line-height: 20px;
+    border: 2px solid #28b421;
+}
+body > .main > div > div > div > div > a:hover {
+    background:none;
+    border: 2px solid #28b421;
+}
+body > .main > div > div > div > div > label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    color: white;
+}
+body > .main > div > div > div > div > .left{
+    left: 40px;
+}
+body > .main > div > div > div > div > .right{
+    right: 40px;
+}
+body > .main > div > div > #slide1:checked ~ div {
+    transform: translateX(0%);
+}
+body > .main > div > div > #slide2:checked ~ div {
+    transform: translateX(-100%);
+}
+body > .main > div > div > #slide3:checked ~ div {
+    transform: translateX(-200%);
+}
+/*index.jsp - main------------------------------------end*/
+
+/*main_bottom_slide ---------------------------------start*/
+body > .main2 {
+	padding-top : 20px;
+	padding-bottom : 100px;
+}
+body > .main2 > div > h2 {
+    position: relative;
+    margin-left: 15px;
+    margin-bottom: 40px;
+}
+body > .main2 > div > h2::after {
+    content:"";
+    position: absolute;
+    width: 712px;
+    height: 1px;
+    background: #28b421;
+    top: 50%;
+    transform: translateY(-50%) translateX(3%);
+}
+body > .main2 > div > div {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+body > .main2 > div > div > div > div:nth-of-type(1){
+    width: 100%;
+    height: 300px;
+}
+body > .main2 > div > div > div > div:nth-of-type(1) > a{
+    width: 100%;
+    height: 100%;
+}
+body > .main2 > div > div > div > div:nth-of-type(1) > a > img{
+    width: 100%;
+    height: 100%;
+}
+body > .main2 > div > div > .t   {
+    position: relative;
+}
+body > .main2 > div > div > div > div:nth-of-type(2){
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    padding: 0 15px;
+}
+body > .main2 > div > div > div > div:nth-of-type(2) > div{
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    opacity: 0.7;
+}
+body > .main2 > div > div > div > a {
+    position: absolute;
+    top: 230px;
+    left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    
+}
+body > .main2 > div > div > div > a > div > h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+    color: white;
+}
+body > .main2 > div > div > div > a > div > p {
+    font-size: 15px;
+    margin-bottom: 0;
+    color: white;
+}
+body > .main2 > div > div  > input {
+    display: none;
+}
+body > .main2 > div > div > input + div {
+    display: none;
+}
+body > .main2 > div > div > div > .left{
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 100;
+    font-size: 50px;
+    color: rgb(172, 171, 171);
+}
+body > .main2 > div > div > div > .right{
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 100;
+    font-size: 50px;
+    color: rgb(172, 171, 171);
+}
+body > .main2 > div > div > .t {
+    transition: all 0.3s;
+}
+body > .main2 > div > div > #sl1:checked + div {
+    display: block;
+}
+body > .main2 > div > div > #sl1:checked ~ .t {
+    transform: translateX(0);
+}
+body > .main2 > div > div > #sl2:checked + div {
+    display: block;
+}
+body > .main2 > div > div > #sl2:checked ~ .t {
+    transform: translateX(-100%);
+}
+body > .main2 > div > div > #sl3:checked + div {
+    display: block;
+}
+body > .main2 > div > div > #sl3:checked ~ .t {
+    transform: translateX(-200%);
+}
+/*main_bottom_slide ---------------------------------end*/
+
+/*footer.jsp------------------------------------start*/
+body > footer {
+    background-color: rgb(101, 101, 101);
+    padding: 20px 0;
+}
+body > footer > div > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color :rgb(183, 181, 181);
+}
+body > footer > div > div > div:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+}
+body > footer > div > div > div:nth-of-type(1) > div{
+    margin-right: 20px;
+}
+body > footer > div > div > div:nth-of-type(1) > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.texttext > h5 {
+    font-weight: 500;
+    font-size: 18px;
+}
+.bottom > div > p {
+    padding: 0px 10px;
+}
+.bottom > div:nth-of-type(2) > i {
+    color: white;
+}
+body > footer > div > div > div:nth-of-type(1) > ul > a > li > i{
+    color: white;
+    font-size: 30px;
+    display: inline-block;
+    margin-bottom: 10px;   
+}
+body > footer > div > div > div:nth-of-type(1) > ul > a > li:hover{
+	background-color: rgb(183, 181, 181);
+}
+body > footer > div > div > div:nth-of-type(1) > ul > a > li{
+    width: 100px;
+    margin: 0 10px;
+    border: 2px solid rgb(183, 181, 181);
+    height: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color:white;
+    transition : all 0.3s;
+}
+body > footer > div > .top > div:nth-of-type(2){
+    position: relative;
+}
+body > footer > div > div > ul > a > li:hover {
+	background-color: rgb(183, 181, 181);
+}
+body > footer > div > div > ul > a > li {
+    width: 100px;
+    margin: 0 10px;
+    border: 2px solid rgb(183, 181, 181);
+    height: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color:white; 
+    transition : all 0.3s;
+}
+body > footer > div > div > ul > a > li > i {
+    color: white;
+    font-size: 30px;
+    display: inline-block;
+    margin-bottom: 10px;  
+}
+body > footer > div > .bottom > div{
+    display: flex;
+    align-items: center;
+}
+body > footer > div > .bottom > div:nth-of-type(1){
+    align-items: center;
+}
+body > footer > div > .bottom > div > p{
+    display: inline-block;
+    margin: 0 20px;
+    font-weight: 400;
+}
+body > footer > div > .bottom > div:nth-of-type(1) > h5{
+    margin-right: 10px;
+}
+body > footer > div > .bottom > div:nth-of-type(2) > a > i{
+    margin: 0 10px;
+    font-size: 20px;
+    color:white;
+}
+/*footer.jsp------------------------------------end*/
+
+/*login.jsp ----------------------------------------start*/
+body > .login {
+    min-height : 80vh;
+    display: flex;
+    align-items: center;
+    background-color: #F6F6F6;
+    padding-top: 120px;
+    padding-bottom : 100px; 
+ }
+ body > .login > div {
+     display: flex;
+     justify-content: center;
+     align-self: center;
+ }
+ body > .login > div > div {
+     margin-top: 30px;
+     background-color: white;
+     padding: 40px;
+     border-radius: 5px;
+ }
+ body > .login > div > div > h3 {
+     text-align: center;
+ }
+ body > .login > div > div> form {
+     margin-top: 30px;
+ }
+ body > .login > div > div> form > div > input {
+     border-radius: 50px;
+     padding-left: 20px;
+     padding-right: 20px;
+     
+ }
+ body > .login > div > div> form > div:nth-of-type(4) > a{
+ 	transition : all 0.3s; 
+ }
+ body > .login > div > div> form > div:nth-of-type(3) {
+     margin-top: 30px;
+ }
+ body > .login > div > div> form > div:nth-of-type(3) > input {
+     background: #28b421;
+     border: 1px solid #28b421;
+     color: white;
+     cursor: pointer;
+ }
+ body > .login > div > div> form > div:nth-of-type(4) > a:hover {
+ 	background-color : #28b421;
+ 	color : white;
+ }
+ body > .login > div > div> form > div > a {
+     border-radius: 50px;
+     text-align: center;
+     border: 1px solid #28b421;
+     margin-bottom: 30px;
+ }
+ body > .login > div > div > div {
+     text-align: right;
+ }
+ body > .login > div > div > div:nth-of-type(1) {
+     text-align: right;
+ }
+ body > .login > div > div > div:nth-of-type(1) > a{
+     font-size: 14px;
+     color:gray;
+ }
+ body > .login > div > div > div:nth-of-type(2) {
+     margin: 30px 0;
+     text-align: center;
+ }
+ body > .login > div > div > div:nth-of-type(2) > span{
+     position: relative;
+ }
+ body > .login > div > div > div:nth-of-type(2) > span::before{
+     content: "";
+     width: 135%;
+     height: 1px;
+     position: absolute;
+     background: black;
+     top: 50%;
+     left: 0;
+     transform: translateX(-110%);
+ }
+ body > .login > div > div > div:nth-of-type(2) > span::after{
+     content: "";
+     width: 135%;
+     height: 1px;
+     position: absolute;
+     background: black;
+     top: 50%;
+     right: 0;
+     transform: translateX(110%);
+ }
+ body > .login > div > div > div:nth-of-type(3) {
+     display: flex;
+     justify-content: space-between;
+ }
+ body > .login > div > div > div:nth-of-type(3) > a{
+     width: 48%;
+     text-align: center;
+     border-radius: 50px;
+     transition : all 0.3s;
+ }
+ body > .login > div > div > div:nth-of-type(3) > a:nth-of-type(1) {
+     border: 1px solid #28b421;
+ }
+ body > .login > div > div > div:nth-of-type(3) > a:nth-of-type(1):hover {
+     background: #28b421;
+     color: white;
+ }
+ body > .login > div > div > div:nth-of-type(3) > a:nth-of-type(2) {
+    border: 1px solid #FFBB00;
+}
+body > .login > div > div > div:nth-of-type(3) > a:nth-of-type(2):hover {
+    background: #FFBB00;
+    color: white;
+}
+ /*login.jsp ----------------------------------------end*/
+
+/*sel_signUp.jsp ----------------------------------------start*/
+body > .sel_sign {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background-color: #F6F6F6;
+    padding-top : 120px;
+    padding-bottom : 100px;
+}
+body > .sel_sign > div {
+    display: flex;
+    justify-content: center;
+}
+body > .sel_sign > div > div {
+    margin-top: 30px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 5px;
+}
+body > .sel_sign > div > div > h3 {
+    text-align: center;
+    margin-top: 30px;
+}
+body > .sel_sign > div > div > div > h5 {
+    margin: 30px 0 50px 0;
+    line-height: 35px;
+    font-size: 18px;
+}
+body > .sel_sign > div > div > div{
+    text-align: center;
+    margin-top: 20px;
+}
+body > .sel_sign > div > div > div > a {
+    border-radius: 50px;
+    margin-bottom: 30px;
+    background: #28b421;
+    border: 1px solid #28b421;
+    color: white;
+    transition : all 0.3s;
+}
+body > .sel_sign > div > div > div > a:hover {
+    background: white;
+    color: #28b421;
+    border: 1px solid #28b421;
+}
+/*sel_signUp.jsp ----------------------------------------end*/
+
+/*signUp.jsp ------------------------------------------start*/
+body > .signup {
+    padding-top : 120px;
+    padding-bottom : 100px;
+    min-height : 80vh;
+}
+body > .signup > div > div:nth-of-type(1) {
+    text-align: center;
+}
+body > .signup > div > div:nth-of-type(2) {
+    text-align: right;
+    margin-bottom: 20px;
+}
+body > .signup > div > div:nth-of-type(1) > h5{
+    font-size: 16px;
+}
+body > .signup > div > div:nth-of-type(2) > h5 {
+    font-size: 13px;
+    color: #28b421;
+}
+body > .signup > div > div:nth-of-type(3) {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+body > .signup > div > div > form > div > label > span {
+    color: #28b421;
+    font-size: 20px;
+}
+body > .signup > div > div > form > div  input[type="button"]{
+    background: #28b421;
+    border: 1px solid #28b421;
+}
+
+body > .signup > div > div > form > div > input[type="submit"]{
+    background: #28b421;
+    border: 1px solid #28b421;
+}
+body > .signup > div > div > form > .pwans > div > #pwans_success{
+    color: #28b421;
+    display: none;
+    margin-top: -10px;
+}
+body > .signup > div > div > form > .pwans > div > #pwans_faile{
+    color: rgb(255, 49, 49);
+    display: none;
+    margin-top: -10px;
+ }
+body > .signup > div > div > form > .birth > div > input:nth-of-type(2) {
+    margin : 0 25px;
+}
+body > .signup > div > div > form > .gender > div  {
+    white-space: nowrap;
+}
+body > .signup > div > div > form > .protocol > div > .col-4 > label {
+    position: relative;
+    cursor: pointer;
+}
+body > .signup > div > div > form > .protocol > div > .col-4 > label:hover {
+    color: #28b421;
+}
+body > .signup > div > div > form > .protocol > div > .col-4 > div {
+    display: none;
+}
+body > .signup > div > div > form > .submit  {
+    display: flex;
+    justify-content: center;
+}
+body > .signup > div > div > form > .submit > input:hover {
+background: white;
+color: #28b421;
+border: 1px solid #28b421;
+}
+/*signUp.jsp ------------------------------------------end*/
+
+/*sign, seller_sign modal----------------------------------start*/
+body > .s_modal > .s_modal_bg {
+    height: 100vh;
+    width: 100vw;
+    background-color: gray;
+    opacity: 0.4;
+    z-index: 10;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+body > .s_modal > .s_modal_wrap{
+    width: 30vw;
+    height: 50vh;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    display: none;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    padding: 10px;
+    overflow-y: scroll;
+    border-radius: 5px;
+}
+body > .s_modal > .s_modal_wrap > div > h3 {
+    text-align: center;
+}
+body > .s_modal > .s_modal_wrap > div:nth-last-of-type(1){
+    margin-top: 50px;
+}
+body > .s_modal > .s_modal_wrap > div > button {
+background: #28b421;
+border: 1px solid #28b421;
+color: white;
+width: 100%;
+}
+/*sign, seller_sign modal----------------------------------end*/
+
+
+/*seller_signUp.jsp --------------------------------------start*/
+body > .seller_signup {
+    padding-top : 120px;
+    padding-bottom : 100px;
+    min-height : 80vh;
+ }
+ body > .seller_signup > div > div:nth-of-type(1) {
+     text-align: center;
+ }
+ body > .seller_signup > div > div:nth-of-type(1) > h5 {
+     font-size: 16px;
+ }
+ body > .seller_signup > div > div:nth-of-type(2) {
+     text-align: right;
+     margin-bottom: 20px;
+ }
+ body > .seller_signup > div > div:nth-of-type(2)  > h5{
+    font-size: 13px;
+    color: #28b421;
+ }
+ body > .seller_signup > div > div:nth-of-type(3) {
+     display: flex;
+     justify-content: center;
+     margin-top: 20px;
+ }
+ body > .seller_signup > div > div > form > div > label > span {
+    color: #28b421;
+    font-size: 20px;
+ }
+ body > .seller_signup > div > div > form > .pwans > div > #pwans_success{
+    color: #28b421;
+    display: none;
+    margin-top: -10px;
+}
+body > .seller_signup > div > div > form > .pwans > div > #pwans_faile{
+    color: rgb(255, 49, 49);
+    display: none;
+    margin-top: -10px;
+ }
+ body > .seller_signup > div > div > form > div  input[type="button"] {
+    background: #28b421;
+    border: 1px solid #28b421;
+ }
+ body > .seller_signup > div > div > form > .birth > div > input:nth-of-type(2) {
+     margin : 0 25px;
+ }
+ body > .seller_signup > div > div > form > .gender > div  {
+     white-space: nowrap;
+ }
+ body > .seller_signup > div > div > form > .submit  {
+     display: flex;
+     justify-content: center;
+ }
+ body > .seller_signup > div > div > form > .submit > input:hover {
+    background: white;
+    color: #28b421;
+    border: 1px solid #28b421;
+ }
+/*seller_signUp.jsp --------------------------------------end*/
+
+/*aboutUs.jsp -------------------------------------------start*/
+body > .about {
+    padding-top : 120px;
+     padding-bottom: 100px;
+     min-height : 80vh;
+ }
+ body > .about > img {
+     width: 100%;
+     position: relative;
+ }
+ body > .about > div {
+     padding-top: 50px;
+     padding-bottom: 50px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+ }
+ body > .about > div > img {
+    position: absolute;
+    top: 20%;
+    width: 12%;
+ }
+ body > .about > div > h3:nth-of-type(1) {
+    position: absolute;
+    top: 32%;
+    color: white;
+    line-height: 50px;
+ }
+ body > .about > div > h3:nth-of-type(2) {
+     margin-top: 50px;
+     margin-bottom: 30px;
+     line-height: 50px;
+     font-weight: 600;
+     color: #28b421;
+ }
+ body > .about > div > p {
+     font-size: 17px;
+     line-height: 35px;
+ }
+ body > .about > div > div:nth-of-type(1) {
+     margin-top: 40px;
+     margin-bottom: 140px;
+     display: flex;
+     justify-content: space-between;
+ }
+ body > .about > div > div:nth-of-type(1) > div {
+     width: 23%;
+     position: relative;
+     border-bottom: 4px solid #28b421;
+ }
+ body > .about > div > div:nth-of-type(1) > div > img{
+     padding: 0;
+ }
+ body > .about > div > div:nth-of-type(1) > div > div {
+     position: absolute;
+     top: 0;
+     left: 0;
+     text-align: left;
+     display: flex;
+     align-items: flex-start;
+     flex-direction: column;
+     justify-content: space-between;
+     height: 100%;
+     border-left:15px solid transparent;
+     border-right:15px solid transparent;
+     font-size: 15px;
+     padding-top: 20px;
+     transition: all 0.3s;
+ }
+ body > .about > div > div:nth-of-type(1) > div > div > ul > li{
+     list-style: inside;
+ }
+ body > .about > div > div:nth-of-type(1) > div > div:hover {
+     background: black;
+     opacity: 0.8;
+ }
+ body > .about > div > div:nth-of-type(1) > div > div:hover > p{
+     color: white;
+ }
+ body > .about > div > div:nth-of-type(1) > div > div:hover > ul{
+     color: white;
+ }
+ body > .about > div > div:nth-of-type(1) > div > div > ul {
+     color: transparent;
+ }
+ body > .about > div > div:nth-of-type(1) > div > div > p {
+     font-weight: bolder;
+ }
+ body > .about > div > div:nth-of-type(2){
+     margin-top: 60px;
+ }
+ body > .about > div > h3:nth-of-type(3) {
+     color: #28b421;
+     font-weight: 600;
+     margin-bottom: 30px;
+ }
+ body > .about > div > div:nth-of-type(2) > div > img {
+     height: 200px;
+     background-position: center;
+ }
+ body > .about > div > div:nth-of-type(2) > .text {
+     height: 200px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ body > .about > div > div:nth-of-type(2) > .text >  h5 {
+     color: #28b421;
+     font-size: 17px;
+ }
+ body > .about > div > div:nth-of-type(2) > .text >  h3 {
+    font-size: 25px;
+}
+ body > .about > div > div:nth-of-type(2) > .text > p {
+     margin-top: 20px;
+ }
+ body > .about > div > div:nth-of-type(3) {
+     margin-top: 100px;
+ }
+ body > .about > div > div:nth-of-type(3) > div > img {
+     height: 200px;
+     background-position: center;
+ }
+ body > .about > div > div:nth-of-type(3) > .text {
+     height: 200px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ body > .about > div > div:nth-of-type(3) > .text >  h5 {
+    color: #28b421;
+    font-size: 17px;
+}
+body > .about > div > div:nth-of-type(3) > .text >  h3 {
+    font-size: 25px;
+}
+ body > .about > div > div:nth-of-type(3) > .text > p {
+     margin-top: 20px;
+ }
+ body > .about > div > div:nth-of-type(4) {
+     margin-top: 100px;
+ }
+ body > .about > div > div:nth-of-type(4) > div > img {
+     height: 200px;
+     background-position: center;
+ }
+ body > .about > div > div:nth-of-type(4) > .text {
+     height: 200px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ body > .about > div > div:nth-of-type(4) > .text >  h5 {
+    color: #28b421;
+    font-size: 17px;
+}
+body > .about > div > div:nth-of-type(4) > .text >  h3 {
+    font-size: 25px;
+}
+ body > .about > div > div:nth-of-type(4) > .text > p {
+     margin-top: 20px;
+ }
+ /*aboutUs.jsp -------------------------------------------end*/
+ 
+/*mypage.jsp --------------------------------------------start*/
+body > .mypage {
+    padding-top : 120px;
+     padding-bottom: 100px;
+     min-height : 80vh;
+ }
+ body > .mypage > div:nth-of-type(1) {
+     background: #f5f5f4;
+     padding: 30px 0;
+ }
+ body > .mypage > div:nth-of-type(1) > div > h3 {
+     font-size: 22px;
+ }
+ body > .mypage > div:nth-of-type(1) > div > div {
+     display: flex;
+     margin-top: 20px;
+     justify-content: space-between;
+ }
+ body > .mypage > div:nth-of-type(1) > div > div > div:nth-of-type(1) > i {
+     font-size: 30px;
+     color: #28b421;
+     margin-bottom: 20px;
+ }
+ body > .mypage > div:nth-of-type(1) > div > div > div:nth-of-type(1) > p {
+    font-weight: 500;
+     font-size: 17px;
+     margin-bottom: 5px;
+ }
+ body > .mypage > div:nth-of-type(1) > div > div > div:nth-of-type(1) {
+     width: 30%;
+     text-align: center;
+     padding: 10px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ body > .mypage > div:nth-of-type(1) > div > div > div {
+     background: white;
+     padding: 10px;
+     padding-left: 20px;
+     padding-top: 20px;
+     width: 22%;
+ }
+ body > .mypage > div:nth-of-type(1) > div > div > div > h5{
+     margin-bottom: 20px;
+     font-weight: 500;
+     font-size: 17px;
+ }
+ body > .mypage > div:nth-of-type(1) > div > div > div > a > h5{
+	 margin-bottom: 20px;
+	 font-weight: 500;
+	 font-size: 17px;
+	 transition : all 0.3s;
+ }
+ body > .mypage > div:nth-of-type(1) > div > div > div > a > h5:hover{
+ 	color : #28b421;
+ }
+ body > .mypage > div:nth-of-type(1) > div > div > div > p {
+     font-size: 13px;
+ }
+ body > .mypage > div:nth-of-type(1) > div > div > div > .hh {
+     color: #28b421;
+ }
+ body > .mypage > div:nth-of-type(2) > div {
+     margin-top: 20px;
+ }
+ body > .mypage > div:nth-of-type(2) > div > div:nth-of-type(1) > div {
+     margin-bottom: 15px;
+     display:flex;
+     justify-content: center;
+ }
+ body > .mypage > div:nth-of-type(2) > div > div:nth-of-type(1) > ul > a {
+     font-size: 18px;
+     color: black;
+ }
+ body > .mypage > div:nth-of-type(2) > div > div:nth-of-type(1) > ul > a > li {
+     display: flex;
+     justify-content: space-between;
+     border: 1px solid rgb(216, 216, 216);
+     padding: 5px 10px;
+ }
+ body > .mypage > div:nth-of-type(2) > div > div:nth-of-type(1) > ul > a:nth-of-type(1) > li {
+     background-color: #28b421;
+     color: white;
+ }
+ body > .mypage > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(1) {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ body > .mypage > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(1) > h5 {
+     font-size: 18px;
+ }
+ body > .mypage > div:nth-of-type(2) > div > div:nth-of-type(2) > hr:nth-of-type(1) {
+     border: 2px solid rgba(0, 0, 0, 0.1);
+ }
+ body > .mypage > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(2) {
+     display: flex;
+     flex-direction: column;
+ }
+ body > .mypage > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(2) > table > tbody > tr > td:nth-of-type(1) > img{
+     width: 100%;
+     height : 100px;
+ }
+ body > .mypage > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(2) > table > tbody {
+    margin-bottom: 0;
+    text-align: center;
+ }
+ body > .mypage > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(2) > table > tbody > tr > td > ul{
+    margin: 0;
+ }
+ body > .mypage > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(2) > table > tbody > tr > td {
+ 	padding : 5px 0;
+    vertical-align: middle;
+ }
+ body > .mypage > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(2) > table > tbody > tr > td > ul > li{
+    border-bottom : 1px solid #dee2e6;
+ }
+ body > .mypage > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(2) > table > tbody > tr > td > ul > li:nth-last-of-type(1){
+ 	border-bottom : none;
+ }
+ body > .mypage > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(2) > table > tbody > tr > td > ul > li{
+    padding: 5px 0;
+ }
+ body > .mypage > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(3) {
+     display: flex;
+     justify-content: flex-end;
+ }
+ body > .mypage > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(3) > a {
+     color: white;
+     background: #28b421;
+     border: #28b421;
+ }
+ body > .mypage > div:nth-of-type(2) > div > div:nth-last-of-type(1) {
+    display: flex;
+    justify-content: center;
+    
+}
+body > .mypage > div:nth-of-type(2) > div > div:nth-last-of-type(1) > p > a{
+	margin : 0 10px;
+}
+body > .mypage > div:nth-of-type(2) > div > div:nth-last-of-type(1) > p > b{
+	margin : 0 10px;
+}
+
+/*mypage.jsp --------------------------------------------end*/
+
+/*modi_mypage---------------------------------------------start*/
+body > .modi_mypage {
+    padding-top : 120px;
+     padding-bottom: 100px;
+     min-height : 80vh;
+ }
+ body > .modi_mypage > div:nth-of-type(1) {
+     background: #f5f5f4;
+     padding: 30px 0;
+ }
+ body > .modi_mypage > div:nth-of-type(1) > div > h3 {
+     font-size: 22px;
+ }
+ body > .modi_mypage > div:nth-of-type(1) > div > div {
+     display: flex;
+     margin-top: 20px;
+     justify-content: space-between;
+ }
+ body > .modi_mypage > div:nth-of-type(1) > div > div > div:nth-of-type(1) > i {
+     font-size: 30px;
+     color: #28b421;
+     margin-bottom: 20px;
+ }
+ body > .modi_mypage > div:nth-of-type(1) > div > div > div:nth-of-type(1) > p {
+    font-weight: 500;
+     font-size: 17px;
+     margin-bottom: 5px;
+ }
+ body > .modi_mypage > div:nth-of-type(1) > div > div > div:nth-of-type(1) {
+     width: 30%;
+     text-align: center;
+     padding: 10px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ body > .modi_mypage > div:nth-of-type(1) > div > div > div {
+     background: white;
+     padding: 10px;
+     padding-left: 20px;
+     padding-top: 20px;
+     width: 22%;
+ }
+ body > .modi_mypage > div:nth-of-type(1) > div > div > div > h5{
+     margin-bottom: 20px;
+     font-weight: 500;
+     font-size: 17px;
+ }
+ body > .modi_mypage > div:nth-of-type(1) > div > div > div > a > h5{
+	 margin-bottom: 20px;
+	 font-weight: 500;
+	 font-size: 17px;
+	 transition : all 0.3s;
+ }
+ body > .modi_mypage > div:nth-of-type(1) > div > div > div > a > h5:hover{
+ 	color : #28b421;
+ }
+ body > .modi_mypage > div:nth-of-type(1) > div > div > div > p {
+     font-size: 13px;
+ }
+ body > .modi_mypage > div:nth-of-type(1) > div > div > div > .hh {
+     color: #28b421;
+ }
+ body > .modi_mypage > div:nth-of-type(2) > div {
+     margin-top: 20px;
+ }
+ body > .modi_mypage > div:nth-of-type(2) > div > div:nth-of-type(1) > div {
+     margin-bottom: 15px;
+     display:flex;
+     justify-content: center;
+ }
+ body > .modi_mypage > div:nth-of-type(2) > div > div:nth-of-type(1) > ul > a {
+     font-size: 18px;
+     color: black;
+ }
+ body > .modi_mypage > div:nth-of-type(2) > div > div:nth-of-type(1) > ul > a > li {
+     display: flex;
+     justify-content: space-between;
+     border: 1px solid rgb(216, 216, 216);
+     padding: 5px 10px;
+ }
+ body > .modi_mypage > div:nth-of-type(2) > div > div:nth-of-type(1) > ul > a:nth-of-type(3) > li {
+     background-color: #28b421;
+     color: white;
+ }
+ body > .modi_mypage > div:nth-of-type(2) > div > div:nth-of-type(2) > form > div.pwans > div > p {
+ 	display: none;
+ }
+ body > .modi_mypage > div:nth-of-type(2) > div > div:nth-of-type(2) > form > div.pwans > div > p:nth-of-type(1) {
+ 	color : #28b421;
+ }
+ body > .modi_mypage > div:nth-of-type(2) > div > div:nth-of-type(2) > form > div.pwans > div > p:nth-of-type(2) {
+ 	color : red;
+ }
+/*modi_mypage---------------------------------------------end*/
+
+/*modi_mypagechk-----------------------------------------start*/
+body > .modi_mypagechk {
+    padding-top : 120px;
+     padding-bottom: 100px;
+     min-height : 80vh;
+ }
+ body > .modi_mypagechk > div:nth-of-type(1) {
+     background: #f5f5f4;
+     padding: 30px 0;
+ }
+ body > .modi_mypagechk > div:nth-of-type(1) > div > h3 {
+     font-size: 22px;
+ }
+ body > .modi_mypagechk > div:nth-of-type(1) > div > div {
+     display: flex;
+     margin-top: 20px;
+     justify-content: space-between;
+ }
+ body > .modi_mypagechk > div:nth-of-type(1) > div > div > div:nth-of-type(1) > i {
+     font-size: 30px;
+     color: #28b421;
+     margin-bottom: 20px;
+ }
+ body > .modi_mypagechk > div:nth-of-type(1) > div > div > div:nth-of-type(1) > p {
+    font-weight: 500;
+     font-size: 17px;
+     margin-bottom: 5px;
+ }
+ body > .modi_mypagechk > div:nth-of-type(1) > div > div > div:nth-of-type(1) {
+     width: 30%;
+     text-align: center;
+     padding: 10px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ body > .modi_mypagechk > div:nth-of-type(1) > div > div > div {
+     background: white;
+     padding: 10px;
+     padding-left: 20px;
+     padding-top: 20px;
+     width: 22%;
+ }
+ body > .modi_mypagechk > div:nth-of-type(1) > div > div > div > h5{
+     margin-bottom: 20px;
+     font-weight: 500;
+     font-size: 17px;
+ }
+ body > .modi_mypagechk > div:nth-of-type(1) > div > div > div > a > h5{
+	 margin-bottom: 20px;
+	 font-weight: 500;
+	 font-size: 17px;
+	 transition : all 0.3s;
+ }
+ body > .modi_mypagechk > div:nth-of-type(1) > div > div > div > a > h5:hover{
+ 	color : #28b421;
+ }
+ body > .modi_mypagechk > div:nth-of-type(1) > div > div > div > p {
+     font-size: 13px;
+ }
+ body > .modi_mypagechk > div:nth-of-type(1) > div > div > div > .hh {
+     color: #28b421;
+ }
+ body > .modi_mypagechk > div:nth-of-type(2) > div {
+     margin-top: 20px;
+ }
+ body > .modi_mypagechk > div:nth-of-type(2) > div > div:nth-of-type(1) > div {
+     margin-bottom: 15px;
+     display:flex;
+     justify-content: center;
+ }
+ body > .modi_mypagechk > div:nth-of-type(2) > div > div:nth-of-type(1) > ul > a {
+     font-size: 18px;
+     color: black;
+ }
+ body > .modi_mypagechk > div:nth-of-type(2) > div > div:nth-of-type(1) > ul > a > li {
+     display: flex;
+     justify-content: space-between;
+     border: 1px solid rgb(216, 216, 216);
+     padding: 5px 10px;
+ }
+ body > .modi_mypagechk > div:nth-of-type(2) > div > div:nth-of-type(1) > ul > a:nth-of-type(3) > li {
+     background-color: #28b421;
+     color: white;
+ }
+/*modi_mypagechk-------------------------------------------end*/
+
+
+/*store_management.jsp ----------------------------------start*/
+body > .s_manage {
+	padding-top : 120px;
+	padding-bottom : 100px;
+	min-height : 80vh;
+}
+body > .s_manage > div:nth-of-type(1) {
+    background: #f5f5f4;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+body > .s_manage > div:nth-of-type(1) > div > h3 {
+    font-size: 22px;
+}
+body > .s_manage > div:nth-of-type(1) > div:nth-of-type(2){
+    display: flex;
+    margin-top: 20px;
+    width: 1110px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 40px 0;
+}
+body > .s_manage > div:nth-of-type(1) > div:nth-of-type(2) > i {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #28b421;
+}
+body > .s_manage > div:nth-of-type(1) > div:nth-of-type(2) > p {
+    font-weight: bolder;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+body > .s_manage > div:nth-of-type(2) > div {
+    margin-top: 20px;
+}
+body > .s_manage > div:nth-of-type(2) > div > div:nth-of-type(1) > div:nth-of-type(1) {
+    display :flex;
+    justify-content: center;
+    margin-bottom : 15px;
+}
+body > .s_manage > div:nth-of-type(2) > div > div:nth-of-type(1) > ul > a {
+    font-size: 18px;
+     color: black;
+}
+body > .s_manage > div:nth-of-type(2) > div > div:nth-of-type(1) > ul > a > li {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(216, 216, 216);
+    padding: 5px 10px;
+}
+body > .s_manage > div:nth-of-type(2) > div > div:nth-of-type(1) > ul > a:nth-of-type(1) > li {
+    background-color: #28b421;
+     color: white;
+}
+body > .s_manage > div:nth-of-type(2) > div > form > div:nth-of-type(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+body > .s_manage > div:nth-of-type(2) > div > form > div:nth-of-type(1) > div {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+body > .s_manage > div:nth-of-type(2) > div > form > div:nth-of-type(1) > div > h5 {
+    font-size: 18px;
+    margin-right: 30px;
+}
+body > .s_manage > div:nth-of-type(2) > div > form > table {
+    text-align: center;
+}
+body > .s_manage > div:nth-of-type(2) > div > form > div:nth-of-type(2) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+body > .s_manage > div:nth-of-type(2) > div > form > div:nth-of-type(2) > p {
+    margin-bottom: 0;
+}
+body > .s_manage > div:nth-of-type(2) > div > form > div:nth-of-type(2) > p > a {
+    color: black;
+}
+body > .s_manage > div:nth-of-type(2) > div > form > div:nth-of-type(2) > a {
+    color: white;
+     background: #28b421;
+     border: #28b421;
+}
+/*store_management.jsp ----------------------------------end*/
+
+/*modisellerchk.jsp ----------------------------------start*/
+body > .s_manage_modi {
+	padding-top : 120px;
+	padding-bottom : 100px;
+	min-height : 80vh;
+}
+body > .s_manage_modi > div:nth-of-type(1) {
+    background: #f5f5f4;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+body > .s_manage_modi > div:nth-of-type(1) > div > h3 {
+    font-size: 22px;
+}
+body > .s_manage_modi > div:nth-of-type(1) > div:nth-of-type(2){
+    display: flex;
+    margin-top: 20px;
+    width: 1110px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 40px 0;
+}
+body > .s_manage_modi > div:nth-of-type(1) > div:nth-of-type(2) > i {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #28b421;
+}
+body > .s_manage_modi > div:nth-of-type(1) > div:nth-of-type(2) > p {
+    font-weight: bolder;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+body > .s_manage_modi > div:nth-of-type(2) > div {
+    margin-top: 20px;
+}
+body > .s_manage_modi > div:nth-of-type(2) > div > div:nth-of-type(1) > div:nth-of-type(1) {
+    display :flex;
+    justify-content: center;
+    margin-bottom : 15px;
+}
+body > .s_manage_modi > div:nth-of-type(2) > div > div:nth-of-type(1) > ul > a {
+    font-size: 18px;
+     color: black;
+}
+body > .s_manage_modi > div:nth-of-type(2) > div > div:nth-of-type(1) > ul > a > li {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(216, 216, 216);
+    padding: 5px 10px;
+}
+body > .s_manage_modi > div:nth-of-type(2) > div > div:nth-of-type(1) > ul > a:nth-of-type(2) > li {
+    background-color: #28b421;
+     color: white;
+}
+/*modisellerchk.jsp ----------------------------------end*/
+
+/*modiseller.jsp ----------------------------------start*/
+body > .s_modi {
+	padding-top : 120px;
+	padding-bottom : 100px;
+	min-height : 80vh;
+}
+body > .s_modi > div:nth-of-type(1) {
+    background: #f5f5f4;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+body > .s_modi > div:nth-of-type(1) > div > h3 {
+    font-size: 22px;
+}
+body > .s_modi > div:nth-of-type(1) > div:nth-of-type(2){
+    display: flex;
+    margin-top: 20px;
+    width: 1110px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 40px 0;
+}
+body > .s_modi > div:nth-of-type(1) > div:nth-of-type(2) > i {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #28b421;
+}
+body > .s_modi > div:nth-of-type(1) > div:nth-of-type(2) > p {
+    font-weight: bolder;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+body > .s_modi > div:nth-of-type(2) > div {
+    margin-top: 20px;
+}
+body > .s_modi > div:nth-of-type(2) > div > div:nth-of-type(1) > div:nth-of-type(1) {
+    display :flex;
+    justify-content: center;
+    margin-bottom : 15px;
+}
+body > .s_modi > div:nth-of-type(2) > div > div:nth-of-type(1) > ul > a {
+    font-size: 18px;
+     color: black;
+}
+body > .s_modi > div:nth-of-type(2) > div > div:nth-of-type(1) > ul > a > li {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(216, 216, 216);
+    padding: 5px 10px;
+}
+body > .s_modi > div:nth-of-type(2) > div > div:nth-of-type(1) > ul > a:nth-of-type(2) > li {
+    background-color: #28b421;
+     color: white;
+}
+ body > .s_modi > div:nth-of-type(2) > div > div:nth-of-type(2) > form > div.pwans > div > p {
+ 	display: none;
+ }
+ body > .s_modi > div:nth-of-type(2) > div > div:nth-of-type(2) > form > div.pwans > div > p:nth-of-type(1) {
+ 	color : #28b421;
+ }
+ body > .s_modi > div:nth-of-type(2) > div > div:nth-of-type(2) > form > div.pwans > div > p:nth-of-type(2) {
+ 	color : red;
+ }
+/*modiseller.jsp---------------------------------------end*/
+
+
+/*recipes.jsp ------------------------------------------start*/
+body > .recipes {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    min-height: 80vh;
+}
+body > .recipes > div > div:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body > .recipes > div > div:nth-of-type(1) > p{
+    margin-bottom: 0;
+}
+body > .recipes > div > div:nth-of-type(1) > div {
+    display: flex;
+    align-items: center;
+}
+body > .recipes > div > div:nth-of-type(1) > div > h3{
+    margin-bottom: 0;
+    margin-right: 30px;
+}
+body > .recipes > div > div:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+body > .recipes > div > div:nth-of-type(2) > p{
+    margin-bottom: 0;
+}
+body > .recipes > div > div:nth-of-type(2) > form {
+    display: flex;
+    align-items: center;
+}
+body > .recipes > div > div:nth-of-type(2) > form > input {
+    margin-right: -38px;
+}
+body > .recipes > div > div:nth-of-type(2) > form > a{ 
+    z-index: 2;
+    color: grey;
+    border-left: 1px solid gray;
+    padding-left: 10px;
+}
+body > .recipes > div > div:nth-of-type(3) > div > div > a > img{
+    height: 250px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+} 
+body > .recipes > div > div:nth-of-type(3) > div > div {
+    position: relative;
+}
+body > .recipes > div > div:nth-of-type(3) > div > div > a > i{
+    position: absolute;
+    right: 15px;
+    bottom: 25px;
+    padding: 7px;
+    background: rgba(165, 165, 165, 0.622);
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+body > .recipes > div > div:nth-of-type(3) > div > div > a > i:hover{
+    color: white;
+    background-color: red;
+}
+body > .recipes > div > div:nth-of-type(3) > div > a > p{
+    margin-bottom: 0;
+}
+body > .recipes > div > div:nth-of-type(3) > div > a > p:nth-of-type(1){
+    color: red;
+    font-weight: bold;
+}
+body > .recipes > div > div:nth-of-type(3) > div > a > p:nth-of-type(1) > small{
+    color: rgb(152, 152, 152);
+    text-decoration: line-through;
+}
+body > .recipes > div > div:nth-of-type(3) > div > a > h5{
+    margin-bottom: 0;
+}
+body > .recipes > div > div:nth-of-type(3) > div > a > p:nth-of-type(2){
+    color: rgb(152, 152, 152);
+}
+body > .recipes > div > div:nth-of-type(4) {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+} 
+body > .recipes > div > div:nth-of-type(4) > p > a:nth-of-type(1){
+    color: red;
+}
+body > .recipes > div:nth-of-type(2) {
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 0 20px 20px 0;
+    background-color: white;
+    z-index: 10;
+    position: fixed;
+    top:50%;
+    left: 10px;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+}
+body > .recipes > div:nth-of-type(2) > ul{
+    margin-top: 20px;
+}
+body > .recipes > div:nth-of-type(2) > ul > a > li{
+    margin-bottom: 20px;
+    font-size : 17px;
+}
+body > .recipes > div:nth-of-type(2) > ul > .cupage > li{
+    color: red;
+}
+body > .recipes > div:nth-of-type(2) > ul > a > li:hover{
+    color: red;
+}
+body > .recipes > #recipe_menu {
+    display: none;
+}
+body > .recipes > div:nth-of-type(2) > label {
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    padding: 5px;
+    background: white;
+    transform: translateY(-50%);
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 0 10px 10px 0;
+}
+body > .recipes > #recipe_menu:checked + div{
+    left:-15%
+}
+/*recipes.jsp ------------------------------------------end*/
+
+/*recipe.jsp -------------------------------------------start*/
+body > .recipe {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    min-height: 80vh;
+}
+body > .recipe > div > p {
+    display: flex;
+    justify-content: flex-end;
+}
+body > .recipe > div > div > div:nth-of-type(1) > img {
+    height: 500px;
+    width: 100%;
+}
+body > .recipe > div > div > div:nth-of-type(2) > h5 {
+    font-weight: 400;
+    font-size: 17px;
+}
+body > .recipe > div > div > div:nth-of-type(2) > form > div {
+    display: flex;
+    justify-content: space-around;
+}
+body > .recipe > div > div > div:nth-of-type(2) > form > div > a{
+	color : white;
+}
+body > .recipe > div > div:nth-of-type(2) {
+    margin-top: 50px;
+}
+body > .recipe > div > div:nth-of-type(2) > h5{
+    margin-left: 50px;
+
+}
+body > .recipe > div > div:nth-of-type(2) > div {
+    border: 1px solid rgba(128, 128, 128, 0.346);
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+body > .recipe > div > div:nth-of-type(2) > div > p{
+    margin: 10px 0;
+}
+/*recipe.jsp -------------------------------------------end*/
+
+/*notice.jsp ------------------------------------------start*/
+body > .notice {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    min-height: 80vh;
+}
+body > .notice > div:nth-of-type(1) > img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 50px;
+}
+body > .notice > div:nth-of-type(2) > div:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+body > .notice > div:nth-of-type(2) > table {
+    border-bottom: 2px solid #dee2e6;
+    border-top: 2px solid #dee2e6;
+    margin-bottom: 40px;
+}
+body > .notice > div:nth-of-type(2) > div:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+body > .notice > div:nth-of-type(2) > div:nth-of-type(2) > form{
+    display: flex;
+    align-items: center;
+}
+body > .notice > div:nth-of-type(2) > div:nth-of-type(2) > form > input{
+    margin-right: -38px;
+}
+
+body > .notice > div:nth-of-type(2) > div:nth-of-type(2) > form > a{
+    z-index: 4;
+    color: grey;
+    border-left: 1px solid gray;
+    padding-left: 10px;
+}
+body > .notice > div:nth-of-type(2) > div:nth-of-type(3) {
+    display: flex;
+    justify-content: center;
+}
+
+/*notice.jsp ------------------------------------------end*/
+
+/*faq.jsp --------------------------------------------start*/
+body > .faq {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    min-height: 80vh;
+}
+body > .faq > div:nth-of-type(1) > img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 50px;
+}
+body > .faq > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+body > .faq > div:nth-of-type(2) > div > div:nth-of-type(1) > div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+body > .faq > div:nth-of-type(2) > div > div:nth-of-type(1) > ul > a {
+    font-size: 18px;
+    color: black;
+}
+body > .faq > div:nth-of-type(2) > div > div:nth-of-type(1) > ul > a > li {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(216, 216, 216);
+    padding: 5px 10px;
+}
+body > .faq > div:nth-of-type(2) > div > div:nth-of-type(1) > ul > a:nth-of-type(1) > li {
+    background-color: #28b421;
+    color: white;
+}
+body > .faq > div:nth-of-type(2) > div > div:nth-of-type(2) > div > label{
+    border-top: 1px solid rgb(216, 216, 216);
+    border-bottom: 1px solid rgb(216, 216, 216);
+    margin: 0;
+}
+body > .faq > div:nth-of-type(2) > div > div:nth-of-type(2) > div > label:hover{
+    background: rgba(216, 216, 216, 0.231);
+}
+body > .faq > div:nth-of-type(2) > div > div:nth-of-type(2) > div > label > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+body > .faq > div:nth-of-type(2) > div > div:nth-of-type(2) > div > label > div > p{
+    margin: 0;
+}
+body > .faq > div:nth-of-type(2) > div > div:nth-of-type(2) > div > label > div > p > i {
+    padding: 6px;
+    background: rgb(188, 188, 188);
+    border-radius: 50%;
+}
+body > .faq > div:nth-of-type(2) > div > div:nth-of-type(2) > div > input {
+    display: none;
+}
+body > .faq > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div {
+    display: none;
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+body > .faq > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > p{
+    margin-bottom: 0;
+    padding: 5px 0;
+}
+body > .faq > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > p > i{
+    padding: 6px;
+    background: rgba(255, 0, 0, 0.542);
+    border-radius: 50%;
+}
+body > .faq > div:nth-of-type(2) > div > div:nth-of-type(2) > div > input:checked + div{
+    display: flex;
+    align-items: center;
+}
+body > .faq > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-last-of-type(2) {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+body > .faq > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-last-of-type(2) > form{
+    display: flex;
+    align-items: center;   
+}
+body > .faq > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-last-of-type(2) > form > input{
+    margin-right: -38px;
+}
+body > .faq > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-last-of-type(2) > form > a{
+    z-index: 2;
+    color: grey;
+    border-left: 1px solid gray;
+    padding-left: 10px;
+}
+body > .faq > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-last-of-type(1)  {
+    display: flex;
+    justify-content: center;
+}
+/*faq.jsp --------------------------------------------end*/
+
+/*one_qna.jsp ---------------------------------------start*/
+body > .qna {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    min-height: 80vh;
+}
+body > .qna > div:nth-of-type(1) > img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 50px;
+}
+body > .qna > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+body > .qna > div:nth-of-type(2) > div > div:nth-of-type(1) > div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+body > .qna > div:nth-of-type(2) > div > div:nth-of-type(1) > ul > a {
+    font-size: 18px;
+    color: black;
+}
+body > .qna > div:nth-of-type(2) > div > div:nth-of-type(1) > ul > a > li {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(216, 216, 216);
+    padding: 5px 10px;
+}
+body > .qna > div:nth-of-type(2) > div > div:nth-of-type(1) > ul > a:nth-of-type(2) > li {
+    background-color: #28b421;
+    color: white;
+}
+body > .qna > div:nth-of-type(2) > div > div:nth-of-type(2) > table {
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 30px;
+}
+body > .qna > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-last-of-type(2) {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+body > .qna > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-last-of-type(1) {
+    display: flex;
+    justify-content: center;
+}
+body > .qna > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-last-of-type(1) > p > a:nth-of-type(1){
+    color: red;
+}
+/*one_qna.jsp ---------------------------------------end*/
+
+/*board_write.jsp -----------------------------------start*/
+body > .bo_write {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    min-height: 80vh;
+}
+body >.bo_write > div > h5 {
+    text-align: center;
+}
+body >.bo_write > div > h3 {
+    text-align: center;
+}
+body >.bo_write > div > p {
+    text-align: right;
+}
+body >.bo_write > div > form > div:nth-last-of-type(2) > div > p {
+    color: gray;
+}
+body >.bo_write > div > form > div:nth-last-of-type(1) {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+body >.bo_write > div > form > div:nth-last-of-type(1) > input{
+    margin-right: 20px;
+}
+body >.bo_write > div > form > div:nth-last-of-type(1) > a{
+	color:white;
+}
+/*board_write.jsp -----------------------------------end*/
+
+/*notice_view.jsp ----------------------------------start*/
+body > .bo_view {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    min-height: 80vh;
+}
+body > .bo_view > div > h5 {
+    text-align: center;
+}
+body > .bo_view > div > hr:nth-of-type(1) {
+    border: 2px solid rgba(0,0,0,.1);
+}
+body > .bo_view > div > h3:nth-of-type(1) {
+    text-align: center;
+}
+body > .bo_view > div > div:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+body > .bo_view > div > div:nth-of-type(1) > div:nth-of-type(1) > p {
+    margin-right: 20px;
+}
+body > .bo_view > div > hr:nth-of-type(3) {
+margin-top: 50px
+}
+body > .bo_view > div > div:nth-of-type(2) > img {
+	transition : all 0.3s;
+}
+body > .bo_view > div > div:nth-of-type(2) > img:hover {
+	transform : scale(1.5);
+}
+body > .bo_view > div > div#comment {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: rgba(128, 128, 128, 0.493);
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+body > .bo_view > div > div#comment > p {
+    margin-bottom: 0;
+}
+body > .bo_view > div > div:nth-last-of-type(1) {
+    display: flex;
+    justify-content: center;
+}
+body > .bo_view > div > div:nth-last-of-type(1) > a {
+    margin: 0 10px;
+    color: white;
+}
+/*notice_view.jsp ----------------------------------end*/
+
+/*re_review.jsp ----------------------------------start*/
+body > .re_review {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    min-height: 80vh;
+}
+body > .re_review > div:nth-of-type(1) > img {
+    width: 100%;
+    height: 300px;
+}
+body > .re_review > div:nth-of-type(1) {
+    margin-bottom: 50px;
+}
+body > .re_review > div:nth-of-type(2) > h5 {
+    text-align: center;
+}
+body > .re_review > div:nth-of-type(2) > h3 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+body > .re_review > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+body > .re_review > div:nth-of-type(2) > div:nth-of-type(1) > div > h4 {
+    margin-bottom: 20px;
+}
+body > .re_review > div:nth-of-type(2) > div:nth-of-type(1) > div > h5 {
+    color: gray;
+}
+body > .re_review > div:nth-of-type(2) > div:nth-of-type(1) > div > img{
+    height: 200px;
+    width: 100%;
+}
+body > .re_review > div:nth-of-type(2) > div:nth-of-type(1) {
+    margin-bottom: 50px;
+}
+body > .re_review > div:nth-of-type(2) > div:nth-of-type(2){
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 80px;
+}
+body > .re_review > div:nth-of-type(2) > div:nth-of-type(2) > form{
+    display: flex;
+    align-items: center;
+}
+body > .re_review > div:nth-of-type(2) > div:nth-of-type(2) > form > input{
+    margin-right: -38px;
+}
+body > .re_review > div:nth-of-type(2) > div:nth-of-type(2) > form > i {
+    z-index: 2;
+    border-left: 1px solid gray;
+    padding-left: 10px;
+    color: grey;
+}
+body > .re_review > div:nth-of-type(2) > div:nth-of-type(3) > div > div > a {
+	height: 200px;
+}
+body > .re_review > div:nth-of-type(2) > div:nth-of-type(3) > div > div > a > img {
+    padding: 0;
+    height: 200px;
+}
+body > .re_review > div:nth-of-type(2) > div:nth-of-type(3) > div > div {
+    position: relative;
+    margin-bottom: 10px;
+}
+body > .re_review > div:nth-of-type(2) > div:nth-of-type(3) > div > div > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+body > .re_review > div:nth-of-type(2) > div:nth-of-type(3) > div > div > div > a > i {
+    color: red;
+    padding: 6px;
+    background: white;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+body > .re_review > div:nth-of-type(2) > div:nth-of-type(3) > div > div > div > a:hover > i {
+    color: white;
+    background: red;
+}
+body > .re_review > div:nth-of-type(2) > div:nth-of-type(3) > div > div > div > a:hover > span {
+    color: white;
+}
+body > .re_review > div:nth-of-type(2) > div:nth-of-type(3) > div > div > div > a > span {
+    font-weight: bolder;
+    transition: all 0.3s;
+}
+body > .re_review > div:nth-of-type(2) > div:nth-of-type(3) > div > a > h5 {
+    font-weight: bold;
+}
+body > .re_review > div:nth-of-type(2) > div:nth-of-type(3){
+    margin-bottom: 50px;
+}
+body > .re_review > div:nth-of-type(2) > div:nth-of-type(4){
+    display: flex;
+    justify-content: flex-end;
+}
+
+body > .re_review > div:nth-of-type(2) > div:nth-last-of-type(1){
+	display: flex;
+	justify-content: center;
+}
+/*re_review.jsp ----------------------------------end*/
+
+/*cart.jsp -------------------------------------start*/
+body > .cart {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    min-height: 80vh;
+}
+body > .cart > div > form > div:nth-of-type(1) {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+body > .cart > div > form > table > tbody > tr > td > ul > li:nth-of-type(1) {
+    border: none;
+}
+body > .cart > div > form > table > tbody > tr > td > ul > li:nth-last-of-type(1) {
+    border: none;
+}
+body > .cart > div > form > table > tbody > tr > td > ul > li {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding: 5px 0;
+}
+body > .cart > div > form > table{
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    margin-bottom: 50px;
+}
+body > .cart > div > form > div:nth-of-type(2) {
+    display: flex;
+    justify-content: flex-end;
+}
+body > .cart > div > form > div:nth-of-type(2) > div > div {
+    background: rgba(218, 218, 218, 0.5);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+body > .cart > div > form > div:nth-of-type(2) > div > div > p {
+    margin-bottom: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+/*cart.jsp -------------------------------------end*/
+body > .o_complete {
+	min-height : 80vh;
+	width: 100vw;
+}
+body > .o_complete > .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 80vh;
+	text-align: center;
+}
+body > .o_complete > .container > h1{
+	color : #28b421;
+	margin-bottom : 30px;
+}
+/*order_complete.jsp --------------------------start*/
+
+/*order_complete.jsp --------------------------end*/
+
+
+/*productmanage.jsp --------------------------start*/
+body > .a_product {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    min-height: 80vh;
+}
+body > .a_product > div > div:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+body > .a_product > div > div > div:nth-of-type(1) > p{
+    margin-bottom: 0;
+}
+body > .a_product > div> form > table > tbody > tr > th > #foodcate{
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    cursor: auto;
+    outline: none;
+    box-shadow: none;
+}
+body > .a_product > div> form > table > tbody > tr > .foodsearch > div {
+    display: flex;
+    align-items: center;
+}
+body > .a_product > div> form > table > tbody > tr > .foodsearch  > div > input{
+    margin-right : -38px;
+}
+body > .a_product > div> form > table > tbody > tr > .foodsearch  > div > a{
+    z-index: 2;
+    color: gray;
+    border-left: 1px solid gray;
+    padding-left: 10px;
+}
+body > .a_product > div > div:nth-of-type(2) > form {
+    display: flex;
+    align-items: center;
+}
+body > .a_product > div > div:nth-of-type(2) > form > input {
+    margin-right: -38px;
+}
+body > .a_product > div > div:nth-of-type(2) > form > a{ 
+    z-index: 2;
+    color: grey;
+    border-left: 1px solid gray;
+    padding-left: 10px;
+}
+body > .a_product > div > div:nth-of-type(2) { 
+    display: flex;
+    justify-content: right;
+    margin-bottom: 30px;
+}
+body > .a_product > div > form > div {
+    display: flex;
+    justify-content: right;
+}
+body > .a_product > div > div:nth-last-of-type(1) {
+	display: flex;
+	justify-content: center;
+} 
+/*productmanage.jsp --------------------------end*/
+
+/*addrecipe.jsp --------------------------start*/
+
+body > .recipe_add {
+	padding-top : 120px;
+	padding-bottom : 100px;
+	min-height : 80vh;
+}
+body > .recipe_add > div > form > div > table > tbody > tr > td {
+	vertical-align: middle;
+}
+body > .recipe_add > div > form > div:nth-of-type(1) > img {
+}
+/*addrecipe.jsp --------------------------end*/
