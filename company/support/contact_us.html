@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="support.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600&family=Nanum+Gothic+Coding&family=Noto+Sans+KR&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cad96521f3.js" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+ 
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <script type="text/javascript">   
+        $(document).ready( function() {
+        
+        $("#header_sub").load("header_sub.html");
+        $("#footer_sub").load("footer_sub.html");
+        
+        });
+    </script>
+    <title>career</title>
+</head>
+    <div id="header_sub"></div>
+<body>
+    <section class="product_top">
+        <div class="top">
+            <div>
+                <img src="../img/about.jpg" alt="" width="100%" height="300px">
+            </div>
+            <div>
+                <h2>SUPPORT</h2>
+                <p>Derma & Plastic Surgery Network Company</p>
+            </div>
+            <div>
+                <div class="product_menu">
+                    <a href="../index.html"><i class="fa-solid fa-house"></i></a><div class="v-line"></div>
+                    <ul class="product_ul">
+                        <li class="product_li">SUPPORT <div class="triangle1"></div><div class="v-line"></div>
+                            <ul class="product_sub">
+                                <a href="../about/vision.html"><li>ABOUT</li></a>
+                                <a href="../product/botulinum.html"><li>PRODUCT</li></a>
+                                <a href="../career/seller.html"><li>CAREER</li></a>
+                                <a href="contact_us.html"><li>SUPPORT</li></a>
+                                <a href="../prcenter/notice.html"><li>PRCENTER</li></a>
+                            </ul>
+                        </li>
+                        <li class="product_li">Contact Us <div class="triangle3"></div>
+                            <ul class="product_sub">
+                                <a href="contact_us.html"><li>Contact Us</li></a>
+                                <a href="data.html"><li>자료실</li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="botulinum">
+        <div>
+            <div class="botulinum_text">
+                <h2>Contact Us</h2>
+                <h3>㈜컴퍼니에 문의하실 내용이 있으시거나 요청사항이 있으신 경우<br>
+                    아래의 항목에 기입하여 접수해 주시면 빠른 시간 내에 담당자가 메일로 답변 드리겠습니다.</h3>
+            </div>
+            <div class="fcf-body">
+
+                <div id="fcf-form">
+                <h3 class="fcf-h3">문의 및 요청사항 접수</h3>
+            
+                <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+                    
+                    <div class="fcf-form-group">
+                        <label for="Name" class="fcf-label">이름</label>
+                        <div class="fcf-input-group">
+                            <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                        </div>
+                    </div>
+            
+                    <div class="fcf-form-group">
+                        <label for="Email" class="fcf-label">이메일 주소</label>
+                        <div class="fcf-input-group">
+                            <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                        </div>
+                    </div>
+            
+                    <div class="fcf-form-group">
+                        <label for="Message" class="fcf-label">내용</label>
+                        <div class="fcf-input-group">
+                            <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                        </div>
+                    </div>
+            
+                    <div class="fcf-form-group">
+                        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">문의 및 요청사항 등록</button>
+                    </div>
+                </form>
+                </div>
+            
+            </div>
+        </div>
+        
+    </section>
+
+</body>
+<div id="footer_sub"></div>
+</html>

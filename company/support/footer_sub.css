@@ -1,0 +1,82 @@
+.box5-3 > i{
+    color: #bbb;
+    font-size: 60px;
+    opacity: 0.4;
+  }
+  
+  footer{
+    background: #353535;
+    height: 150px;
+    width: 100%;
+  }
+  
+  footer > div{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    height: 150px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  footer > div > .address{
+    color: white;
+    font-size: 14px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    padding-top: 0px;
+  }
+  
+  footer > div > .address > p > span{
+    font-weight: 900;
+  }
+  
+  footer > div > div:nth-of-type(2) > ul{
+    width: 150px;
+    margin: 0 10px;
+    padding: 5px;
+    cursor: pointer;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    background: #5D5D5D;
+  }
+  
+  footer > div > div:nth-of-type(2) > ul > .family_site> .triangle{
+    display: inline-block;
+    border: 7px solid transparent;
+    border-bottom-color: white;
+  }
+  
+  footer > div > div:nth-of-type(2) > ul > .family_site:hover{
+    text-decoration-line: underline;
+    text-underline-position: under;
+  }
+  
+  footer > div > div:nth-of-type(2) > ul > .family_site:hover .family_list{
+    opacity: 0.9;
+    bottom: 35px;
+    padding: 5px;
+  }
+  
+  footer > div > div:nth-of-type(2) > ul > .family_site > .family_list{
+    background-color: white;
+    color: #212121;
+    width: 150px;
+    left: 0px;
+    position: absolute;
+    bottom : -15px;
+    opacity: 0;
+    transition: all 0.2s;
+  }
+  
+  footer > div > div:nth-of-type(2) > ul > .family_site > .family_list > li{
+    padding: 5px 0;
+    font-size: 13px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+  }
+  
+  footer > div > div:nth-of-type(2) > ul > .family_site > .family_list > li:hover{
+    color: #002266;
+    font-weight: 800;
+  }

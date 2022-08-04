@@ -1,0 +1,567 @@
+/*기초작업*/
+*
+{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; /*보더+패딩+콘텐츠*/
+}
+a
+{
+    text-decoration: none; /*링크 밑줄 제거*/
+    color: white;
+}
+ul
+{
+    list-style: none; /*동그라미 표시 삭제*/
+}
+
+h2, h3, h4, p{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* about 상단 시작 */
+
+.about_top > .top{
+    position: relative;
+    width: 100%;
+}
+
+.about_top > .top > div:nth-of-type(2){
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 25%;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+}
+
+.about_top > .top > div:nth-of-type(2) > h2{
+    font-size: 50px;
+}
+
+.about_top > .top > div:nth-of-type(2) > p{
+    font-size: 20px;
+}
+
+.about_top > .top > div:nth-of-type(3){
+    position: absolute;
+    width: 50%;
+    height: 60px;
+    left: 25%;
+    bottom: 1.3%;
+    display: flex;
+    z-index: 1;
+    background-color: #002266;
+}
+
+.about_top > .top > div:nth-of-type(3) > .about_menu{
+    display: flex;
+}
+
+.about_top > .top > div:nth-of-type(3) > .about_menu > .v-line{
+    position: absolute;
+    border-left: 1px solid white;
+    height : 20px;
+    left: 100px;
+    top: 20px;
+}
+
+.about_top > .top > div:nth-of-type(3) > .about_menu > a{
+    color: white;
+    margin: auto 40px;
+}
+
+.about_top > .top > div:nth-of-type(3) > .about_menu > .about_ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about_top > .top > div:nth-of-type(3) > .about_menu > .about_ul > .about_li{
+    cursor: pointer;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    color: white;
+    font-size: 14px;
+    position: relative;
+    border-bottom: transparent 2px solid;
+}
+
+.about_top > .top > div:nth-of-type(3) > .about_menu > .about_ul > .about_li:nth-of-type(1){
+    padding: 0 180px 0 50px;
+}
+
+.about_top > .top > div:nth-of-type(3) > .about_menu > .about_ul > .about_li > .triangle1{
+    display: inline-block;
+    position: absolute;
+    border: 7px solid transparent;
+    border-top-color: white;
+    left: 105px;
+    top: 7px;
+  }
+
+  .about_top > .top > div:nth-of-type(3) > .about_menu > .about_ul > .about_li > .triangle2{
+    display: inline-block;
+    position: absolute;
+    border: 7px solid transparent;
+    border-top-color: white;
+    left: 35px;
+    top: 7px;
+  }
+
+  .about_top > .top > div:nth-of-type(3) > .about_menu > .about_ul > .about_li > .triangle3{
+    display: inline-block;
+    position: absolute;
+    border: 7px solid transparent;
+    border-top-color: white;
+    left: 80px;
+    top: 7px;
+  }
+
+  .about_top > .top > div:nth-of-type(3) > .about_menu > .about_ul > .about_li > .v-line{
+    position: absolute;
+    border-left: 1px solid white;
+    height : 20px;
+    left: 230px;
+    top: 0px;
+  }
+
+.about_top > .top > div:nth-of-type(3) > .about_menu > .about_ul > .about_li:hover{
+    text-decoration: underline;
+    text-decoration-line: under;
+    transform: all;
+}
+
+.about_top > .top > div:nth-of-type(3) > .about_menu > .about_ul > .about_li:hover .about_sub{
+    opacity: 0.9;
+    top: 25px;
+    background-color: #002266;
+}
+
+.about_top > .top > div:nth-of-type(3) > .about_menu > .about_ul > .about_li > .about_sub{
+    color: white;
+    width: 230px;
+    position: absolute;
+    padding: 16px 0 0 0;
+    opacity: 0;
+    transition: all 0.2s;
+    margin-left: -49px;
+}
+
+.about_top > .top > div:nth-of-type(3) > .about_menu > .about_ul > .about_li > .about_sub > a > li{
+    padding: 6px 10px 6px 50px;
+    color: white;
+}
+
+.about_top > .top > div:nth-of-type(3) > .about_menu > .about_ul > .about_li > .about_sub > a > li:hover{
+    background: white;
+    color: #002266;
+    box-shadow: 1px 1px 10px gray;
+    font-weight: 700;
+}
+
+/* 비전 시작 */
+.vision_text{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 70px;
+    color: #353535;
+}
+
+.vision_text > h2{
+    font-size: 38px;
+  }
+
+  .vision_text > h2:after {
+    content: '';
+    width: 50px;
+    height: 1px;
+    background: #000;
+    display: block;
+    margin: 30px auto 35px;
+}
+
+.vision_text > h3{
+    font-size: 25px;
+    font-weight: 200;
+    padding-bottom: 20px;
+}
+
+  .vision_text > p{
+    color: grey;
+}
+
+.vision_img{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.vision_img > .img_box{
+    position: relative;
+    cursor: pointer;
+}
+
+.vision_img > .img_box > .img_hover_before > p{
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 10%;
+    font-size: 20px;
+}
+
+.vision_img > .img_box > .img_hover_before > a > i{
+    position: absolute;
+    z-index: 1;
+    top: 79.5%;
+    right: 10%;
+    padding: 7px 9px;
+    border: #353535 2px solid;
+    border-radius: 50%;
+}
+
+.vision_img > .img_box > .img_hover_after{
+    position: absolute;
+    top: 0%;
+    background-color: #002266;
+    opacity: 0;
+    width: 277px;
+    height: 402px;
+    color: white;
+}
+
+.vision_img > .img_box > .img_hover_after > h4{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.vision_img > .img_box > .img_hover_after > p{
+    padding-left: 20px;
+}
+
+.img_box:hover .img_hover_after{
+    opacity: 0.8;
+}
+
+.img_box:hover .img_hover_before > p{
+    color: white;
+}
+
+.img_box:hover .img_hover_before > a > i{
+    color: white;
+    border: white 2px solid;
+    border-radius: 50%;
+}
+
+.vision_icon{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin: 0 auto;
+}
+
+.vision_icon > div > p{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+/* CEO 인사말 시작 */
+.ceo > div > div{
+    background-image: url(../img/ceo_bg.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.ceo > div > div > h3{
+    padding-bottom: 80px;
+}
+
+.ceo > div > div > p{
+    color: #353535;
+    font-size: 18px;
+    padding: 80px 0;
+}
+
+.ceo > div > div > p > span{
+    font-weight: 600;
+}
+
+/* 회사연혁 시작 */
+.history > div{
+    position: relative;
+}
+
+.history_text{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 70px;
+    color: #353535;
+}
+
+.history_text > h2{
+    font-size: 38px;
+  }
+
+  .history_text > h2:after {
+    content: '';
+    width: 50px;
+    height: 1px;
+    background: #000;
+    display: block;
+    margin: 30px auto 35px;
+}
+
+.history_text > h3{
+    font-size: 25px;
+    font-weight: 200;
+    padding-bottom: 20px;
+}
+
+.history_text > h3 > span{
+    color: #002266;
+}
+
+.history_tab{
+    position: relative;
+	width: 100%;
+	margin: 50px auto;
+    text-align: center;
+    position: absolute;
+    border-top: #D5D5D5 solid 1px;
+}
+
+.history_tab > .tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+    border-bottom: #D5D5D5 solid 1px;
+}
+.history_tab > .tabs > li{
+	background: none;
+	color: #222;
+	display: inline-block;
+	padding: 15px 35px;
+	cursor: pointer;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+}
+
+ul.tabs li.current{
+	color: #002266;
+    border-bottom: 4px solid #002266;
+}
+
+.history_tab > .tabs > li:hover{
+    color: #002266;
+    font-weight: 700;
+}
+
+.history_tab > .current > p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 26px;
+    padding: 50px 0;
+}
+
+.history_tab > .current > p > span{
+    color: #002266;
+    font-weight: 600;
+}
+
+.history_tab > .current > .line_right{
+    text-align: left;
+    width: 50%;
+    position: relative;
+    margin: 0 auto;
+    left: 28%;
+    padding-bottom: 40px;
+}
+
+.history_tab > .current > div > .border_line{
+    position: absolute;
+    border: 1px solid #002266;
+    top: 16px;
+    left: -6.1%;
+    height: 1045px;
+}
+
+.history_tab > .current > div > h4{
+    font-size: 28px;
+    padding-bottom: 15px;
+}
+
+.history_tab > .current > .line_right > ul > li::before{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 10px;
+    left: -112%;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    background: url(../img/his_dot.png) no-repeat;
+    background-size: 24px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.history_tab > .current > div > ul > span{
+    position: absolute;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+}
+
+.history_tab > .current > div > ul > li{
+    padding:0 0 15px 35px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.history_tab > .current > .line_left{
+    text-align: right;
+    width: 50%;
+    position: relative;
+    margin: 0 auto;
+    right: 28%;
+    padding-bottom: 40px;
+}
+
+.history_tab > .current > .line_left > ul > li::before{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 8px;
+    left: 104.8%;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    background: url(../img/his_dot.png) no-repeat;
+    background-size: 24px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.history_tab > .current > .line_left> ul > span{
+    position: absolute;
+    right: 0px;
+}
+
+.history_tab > .current > .line_left> ul > li{
+    padding:0 35px 15px 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.tab-content{
+	display: none;
+	padding: 15px;
+}
+
+.tab-content.current{
+	display: inherit;
+}
+
+/* 사업영역 시작 */
+.business > div:nth-of-type(2){
+    position: relative;
+    width: 100%;
+}
+
+.business > div:nth-of-type(2) > div{
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding-top: 60px;
+}
+
+.business > div:nth-of-type(2) > div{
+    padding-bottom: 50px;
+}
+
+.business > div:nth-of-type(2) > div > img{
+    filter: drop-shadow(2px 2px 4px #D5D5D5);
+}
+
+.business > div:nth-of-type(2) > div > div{
+    position: relative;
+}
+
+.business > div:nth-of-type(2) > div > div > h3{
+    font-size: 40px;
+    padding: 40px 0 15px 0;
+}
+
+.business > div:nth-of-type(2) > .business_left > div > h3::before{
+    content: '';
+    width: 40px;
+    height: 3px;
+    background: #333;
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: -60px;
+}
+
+.business > div:nth-of-type(2) > .business_right > div > h3::before{
+    content: '';
+    width: 40px;
+    height: 3px;
+    background: #333;
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+}
+
+.business > div:nth-of-type(2) > .business_right > div{
+    padding-left: 80px;
+}
+
+.business > div:nth-of-type(2) > div > div > p{
+    font-size: 18px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.business > div:nth-of-type(2) > div:nth-of-type(5){
+    padding-bottom: 120px;
+}
+
+/* 오시는 길 시작 */
+.map > div{
+    position: relative;
+}
+
+.map_text{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 70px;
+    color: #353535;
+}
+
+.map_text > h2{
+    font-size: 38px;
+  }
+
+  .map_text > h2:after {
+    content: '';
+    width: 50px;
+    height: 1px;
+    background: #000;
+    display: block;
+    margin: 30px auto 50px;
+}
+
+.map_map{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
